@@ -119,7 +119,7 @@ figure {
     #stickyHeader.slideUp {
         top: 0;
         border: 0;
-        z-index: 111;
+        z-index: 1111;
         position: fixed;
         border-radius: 0;
         left: 0;
@@ -980,7 +980,7 @@ ul.check-list li {
 }
 .pricing-plan-style h5 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     padding-bottom: 27px;
 }
 .pricing-plan-style ul li:before {
