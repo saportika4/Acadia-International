@@ -344,13 +344,13 @@ img.shaps-line {
 /* 05. heading */
 .heading {
     text-align: center;
-    width: 59%;
+    width: 79%;
     margin: auto;
     padding-bottom: 40px;
 }
 .heading h2 {
     font-family: 'Instrument Sans';
-    font-size: 70px;
+    font-size: 60px;
     line-height: 80px;
     font-weight: 700;
     text-transform: capitalize;
