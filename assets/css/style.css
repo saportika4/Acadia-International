@@ -297,11 +297,11 @@ form#contact-form h3 {
     color: #fff !important;
     line-height: 16px;
     overflow: hidden;
-    padding: 16px 48px;
+    padding: 18px 36px;
     position: relative;
     font-weight: 700;
     text-align: center;
-    white-space: pre;
+    /* white-space: pre; */
     z-index: 1;
     letter-spacing: 1px;
     border: 0;
