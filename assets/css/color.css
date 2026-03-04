@@ -2,7 +2,7 @@
 .blog-style h4,.blog-style > a:hover,
 .hero-text h1,.top-bar ul li a:hover, .top-bar a:hover,.team-text h4{
    
-    color: #108A00;
+    color: #1B3B8B;
 
 }
 /* Background Color */
@@ -11,9 +11,9 @@
 .clients-rate,.btn,.quotation button.owl-dot.active,.pricing-plan-style ul li:before,
 .pricing-plan-style a.btn:after {
 
-    background-color:#108A00;
+    background-color:#1B3B8B;
 
 }
 .pricing-plan-style a.btn:hover {
-    border-color: #108a00;
+    border-color: #F5B800;
 }

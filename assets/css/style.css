@@ -356,7 +356,7 @@ img.shaps-line {
     text-transform: capitalize;
 }
 .heading h2 span {
-    border-bottom: 8px solid #108A00;
+    border-bottom: 8px solid #F5B800;
     line-height: 54px;
     display: inline-block;
 }
@@ -1096,7 +1096,7 @@ ul.check-list li {
     padding-top: 20px;
     margin-bottom: 20px;
     padding-right: 20px;
-    border: 3px solid #108a00;
+    border: 3px solid #F5B800;
     width: 96%;
     margin-left: auto;
     border-top: 0;
@@ -1265,7 +1265,7 @@ ul.social-icon i {
 }
 ul.social-icon i:hover{
     color: #fff;
-    border-color: #108A00;
+    border-color: #F5B800;
 }
 ul.social-icon i:after {
     background-color: #108A00;
