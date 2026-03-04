@@ -390,6 +390,7 @@ sub {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    gap: 50px;
 }
 /* 07. unlimited-design */
 .unlimited-design {
@@ -714,6 +715,7 @@ ul.check-list li {
     padding-top: 54px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 .team-style:hover .team-text {
     background-color: #FCF5EB;
@@ -789,7 +791,7 @@ ul.check-list li {
     border-radius: 20px;
     width: 100%;
     margin: 0;
-    margin-left: -37px;
+    /* margin-left: -37px; */
     z-index: 0;
     padding-left: 80px;
 }
