@@ -424,7 +424,8 @@
     padding-left: 60px;
   }
   .team-style.two img {
-    height: auto;
+    min-height: 415px;
+    object-fit: cover;
   }
   .clients-rate {
     padding: 45px 36px;
