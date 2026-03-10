@@ -793,7 +793,7 @@ ul.check-list li {
     margin: 0;
     /* margin-left: -37px; */
     z-index: 0;
-    padding-left: 80px;
+    /* padding-left: 20px; */
 }
 .team-style.two:before {
     left: -8%;
