@@ -1428,7 +1428,7 @@ form#subscribe-form {
 #progress {
     z-index: 111;
   position: fixed;
-  bottom: 20px;
+  bottom: 70px;
   right: 10px;
   height: 70px;
   width: 70px;
@@ -1529,7 +1529,7 @@ span#progress-value i {
 
 .whatsapp {
   position: fixed;
-  bottom: 20px;
+  bottom: 70px;
   left: 22px;
   z-index: 999;
 }

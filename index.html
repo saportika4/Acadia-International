@@ -19,8 +19,8 @@
 <body>
 
 <!-- preloader -->
-<div class="preloader d-flex flex-column gap-4">
-  <img src="assets/img/text-white.webp" style="width: 300px;">
+<div class="preloader d-flex flex-column gap-5">
+  <img src="assets/img/text-white.webp" style="width: 250px;">
   <span class="loader"></span>
 </div>
 <!-- preloader end -->
@@ -48,6 +48,31 @@
   </div>
 </header>
 <!-- Header end -->
+
+<!-- Mobile Bottom Nav -->
+<nav class="mobile-bottom-nav">
+  <a href="#home">
+    <i class="fa-solid fa-house"></i>
+    Home
+  </a>
+  <a href="#about">
+    <i class="fa-solid fa-circle-info"></i>
+    About
+  </a>
+  <a href="#services">
+    <i class="fa-solid fa-briefcase"></i>
+    Services
+  </a>
+  <a href="#pricing">
+    <i class="fa-solid fa-tag"></i>
+    Pricing
+  </a>
+  <a href="#faqs">
+    <i class="fa-solid fa-question-circle"></i>
+    FAQ's
+  </a>
+</nav>
+<!-- Mobile Bottom Nav end -->
 
 <!-- Home -->
 <section id="home" class="hero-section">
@@ -754,7 +779,7 @@
 <!-- Footer end -->
 
 <!-- Progress -->
-<div id="progress">
+<div id="progress" class="progress">
   <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
 </div>
 
@@ -773,6 +798,49 @@
 <!-- Email Js -->
 <!-- SweetAlert2 v11 — CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<script>
+  (function () {
+    let lastScrollY = window.scrollY;
+    const header = document.getElementById('stickyHeader');
+    const bottomNav = document.querySelector('.mobile-bottom-nav');
+    const whatsapp = document.querySelector('.whatsapp');
+    const progress = document.querySelector('.progress'); 
+
+    // Helper to check if user has scrolled to the bottom
+    function isAtBottom() {
+      return window.innerHeight + window.scrollY >= document.body.scrollHeight - 10;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.innerWidth > 768) return;
+
+      const currentScrollY = window.scrollY;
+      const atBottom = isAtBottom();
+
+      if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        // Scrolling DOWN
+        header.classList.add('hide-header');
+        if (bottomNav) bottomNav.classList.add('hide-nav');
+      } else {
+        // Scrolling UP
+        header.classList.remove('hide-header');
+        if (bottomNav) bottomNav.classList.remove('hide-nav');
+      }
+
+      // Hide whatsapp & progress when at the bottom
+      if (atBottom) {
+        if (whatsapp) whatsapp.style.opacity = '0';
+        if (progress) progress.style.opacity = '0';
+      } else {
+        if (whatsapp) whatsapp.style.opacity = '';
+        if (progress) progress.style.opacity = '';
+      }
+
+      lastScrollY = currentScrollY;
+    }, { passive: true });
+  })();
+</script>
 
 <!-- SweetAlert2 v11 — JS (load BEFORE contact.js) -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

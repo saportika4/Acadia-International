@@ -166,12 +166,12 @@ form.addEventListener('submit', async function (e) {
       showSuccess(name);
 
       /* Optional toast confirmation on top of success popup */
-      setTimeout(() => {
-        Toast.fire({
-          icon : 'success',
-          title: 'Request sent successfully!'
-        });
-      }, 500);
+      // setTimeout(() => {
+      //   Toast.fire({
+      //     icon : 'success',
+      //     title: 'Request sent successfully!'
+      //   });
+      // }, 500);
 
     } else {
       /* ── API-level error ── */
