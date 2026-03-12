@@ -43,10 +43,6 @@ function showSuccess(name) {
         Australian PR eligibility.
       </p>
       <hr style="margin:16px 0; border-color:#eee;">
-      <p style="font-size:13px; color:#888; margin:0;">
-        📧 Check your inbox for a confirmation email.<br>
-        📞 Office Hours: Mon – Sat &nbsp;|&nbsp; 10 AM – 6 PM
-      </p>
     `,
     confirmButtonText: 'Got it!',
     confirmButtonColor: BRAND_COLOR,
